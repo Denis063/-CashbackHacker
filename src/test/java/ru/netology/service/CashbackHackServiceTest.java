@@ -40,4 +40,11 @@ public class CashbackHackServiceTest {
         int actual = service.remain(15500);
         Assert.assertEquals(actual, 500);
     }
+
+    @Test
+    public void shouldGetRemainIf1000() {
+        CashbackHackService service = new CashbackHackService();
+        int actual = service.remain(1000);
+        Assert.assertEquals(actual, 0);
+    }
 }
