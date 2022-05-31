@@ -24,22 +24,8 @@ public class CashbackHackServiceTest {
     @Test
     public void shouldGetRemainIfMoreOneBoundary() {
         CashbackHackService service = new CashbackHackService();
-        int actual = service.remain(1400);
-        Assert.assertEquals(actual, 600);
-    }
-
-    @Test
-    public void shouldGetRemainIfBoundary() {
-        CashbackHackService service = new CashbackHackService();
-        int actual = service.remain(2000);
-        Assert.assertEquals(actual, 0);
-    }
-
-    @Test
-    public void shouldGetRemainIfHugeAmount() {
-        CashbackHackService service = new CashbackHackService();
-        int actual = service.remain(15500);
-        Assert.assertEquals(actual, 500);
+        int actual = service.remain(1700);
+        Assert.assertEquals(actual, 300);
     }
 
     @Test
